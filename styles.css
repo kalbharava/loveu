@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    width: 80%;
+    height: 60vh;
+    margin: 10vh auto;
+    background-color: #ffcc00;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h1 {
+    animation: cardAnimation 2s ease-in-out;
+}
+
+@keyframes cardAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.cake-container {
+    display: none;
+    text-align: center;
+}
+
+.cake {
+    margin-top: 30px;
+    width: 300px;
+    height: 150px;
+    background-color: #ff80b0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.candles {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.candle {
+    width: 10px;
+    height: 40px;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    position: relative;
+}
+
+.flame {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 20px;
+    background-color: #ff6600;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#blowButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#blowButton:hover {
+    background-color: #ff9900;
+}
+
+.countdown {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #ff80b0;
+}
+
+.message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#nameInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#birthdayMessage {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff80b0;
+}
+
+.final-message {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #ff66cc;
+}
+
+.final-message h1 {
+    font-size: 3rem;
+    animation: confettiAnimation 2s infinite;
+}
+
+@keyframes confettiAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
