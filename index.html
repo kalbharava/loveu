@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="card" class="card" onclick="openCard()">
+        <h1>Click to Open the Card!</h1>
+    </div>
+
+    <div id="cake" class="cake-container">
+        <div class="cake">
+            <div class="candles">
+                <div class="candle" id="candle1"></div>
+                <div class="candle" id="candle2"></div>
+                <div class="candle" id="candle3"></div>
+            </div>
+            <div id="flame1" class="flame"></div>
+            <div id="flame2" class="flame"></div>
+            <div id="flame3" class="flame"></div>
+        </div>
+        <button id="blowButton" onclick="blowCandles()">Blow out the Candles!</button>
+    </div>
+
+    <div id="countdown" class="countdown">
+        <h2>Countdown to Suhani's Birthday!</h2>
+        <div id="timer"></div>
+    </div>
+
+    <div id="message" class="message">
+        <input type="text" id="nameInput" value="Suhani" disabled />
+        <button onclick="displayMessage()">Submit</button>
+        <h2 id="birthdayMessage"></h2>
+    </div>
+
+    <div id="finalMessage" class="final-message">
+        <h1>Happy Birthday!</h1>
+    </div>
+
+    <audio id="celebrationMusic" loop>
+        <source src="celebration-music.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
